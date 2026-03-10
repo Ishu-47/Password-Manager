@@ -1,12 +1,41 @@
-# React + Vite
+# 🔐 Password Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight and secure-by-design Password Manager that helps you manage your credentials locally. This project demonstrates how to handle **Data Persistence** using the Browser's LocalStorage API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+* **Create & Store:** Add new account credentials with a simple form.
+* **Local Persistence:** Your data is saved in `window.localStorage`, so it stays there even if you close the tab.
+* **Secure Privacy:** Zero server-side interaction; your data never leaves your browser.
+* **Responsive UI:** A clean, modern interface built with Tailwind CSS.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+* **Frontend:** React.js / Vite
+* **Styling:** Tailwind CSS
+* **Storage:** Browser LocalStorage API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Installation & Setup
+
+1. **Clone the repository:**
+   git clone [https://github.com/your-username/password-manager.git](https://github.com/your-username/password-manager.git)
+
+2. **Navigate to the project directory:**
+   cd password-manager
+
+3. **Install dependencies:**
+   npm install
+
+4. **Run the application:**
+   npm run dev
+
+## 📂 Project Structure
+* `src/components`: UI components like the Password Form and List.
+* `src/App.jsx`: Main logic for CRUD (Create, Read, Update, Delete) operations.
+* `tailwind.config.js`: Custom styling configurations.
+
+## ⚠️ Security Disclaimer
+This application is for **educational purposes**. While Local Storage is convenient, it is not encrypted by default. Please do not store highly sensitive real-world passwords here without implementing additional encryption.
+
+---
+Built with ❤️ by iSHU
